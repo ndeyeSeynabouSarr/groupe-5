@@ -504,14 +504,6 @@ section h2 {
 }
 
 
-
-
-
-
-
-
-
-
 /* Footer */
 footer {
     background: var(--dark-green);
@@ -525,7 +517,7 @@ footer p {
     opacity: 0.9;
 }
 
-/* Responsive Design */
+/* Responsive Design
 @media (max-width: 768px) {
     .hero h2 {
         font-size: 2rem;
@@ -566,10 +558,9 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    /* .logo h1 { */
-        /* font-size: 1.5rem; */
+    
     }
-
+ */
 
 /* @media (max-width: 480px) { */
     .container {
@@ -613,8 +604,8 @@ footer p {
     background-color: var(--accent-color);
     color: var(--white);
 }
-/* Mobile: max 768px */
-@media (max-width: 768px) {
+/* Mobile*/
+@media (max-width: 568px) {
   .container {
     padding: 0 15px;
   }
@@ -628,7 +619,8 @@ footer p {
   .navbar .nav-links {
     flex-direction: column;
     width: 100%;
-    display: none; /* pour menu burger */
+    display: none; 
+  
   }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
