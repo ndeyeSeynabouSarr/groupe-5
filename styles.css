@@ -29,7 +29,6 @@ body {
     overflow-x: hidden;
 
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -94,7 +93,6 @@ header .container {
 
 nav ul {
     list-style: none;
-    display: flex;
     gap: 2rem;
     align-items: center;
 }
@@ -147,21 +145,23 @@ nav a:hover {
     text-align: center;
     background-image: url(images/back.jpeg);
     width: 100%;
-    height: 700px;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
 
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     color: #2d5016;
 }
 
 .hero h2 {
-    font-size: 1.7rem;
+    font-size: clamp(1rem, 2.5vw, 1.7rem);
     opacity: 0.95;
-    margin-bottom: 300px;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -216,6 +216,25 @@ nav a:hover {
     padding: 0.5rem 0.7rem;
   }
   
+
+/* Adaptations intermédiaires pour tablettes / petits PC */
+@media (max-width: 1024px) {
+    .container { padding: 0 18px; }
+    nav ul { gap: 1rem; }
+}
+
+/* Très petits écrans : empiler le menu */
+@media (max-width: 600px) {
+    nav ul { flex-direction: column; gap: 0.5rem; align-items: center; }
+    header .container { align-items: center; }
+    .btn { padding: 0.8rem 1.2rem; }
+}
+
+/* Grands écrans : limiter l'empattement et garantir lisibilité */
+@media (min-width: 1400px) {
+    .container { max-width: 1400px; }
+    .hero { padding: 6rem 0; }
+}
   .btn-connexion {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;

@@ -6,13 +6,13 @@
 }
 .content img{
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
     border-radius: 19px;
 }
 .content p{
     margin-top: 0;
-    font-size: 18px;
+    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     padding: 30px;
     flex: 1;
