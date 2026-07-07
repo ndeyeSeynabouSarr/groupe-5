@@ -29,4 +29,6 @@ h1{
   .culture-detail {
     flex-direction: column; /* image au dessus, texte en dessous */
   }
+   h1 { font-size: 1.8rem; }
+    p { font-size: 1.5rem; }
 }
