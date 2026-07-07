@@ -29,6 +29,7 @@ body {
     overflow-x: hidden;
 
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -61,7 +62,7 @@ header .container {
     margin-top: -30px;
     margin-bottom: -30px;
     padding: 0 12px;
-   
+
 }
 
 .noir {
@@ -88,11 +89,12 @@ nav ul {
     display: flex;
     gap: 2rem;
     align-items: center;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
 nav ul li {
-    white-space: nowrap; /* éviter le retour à la ligne des liens */
+    white-space: nowrap;
+    /* éviter le retour à la ligne des liens */
 }
 
 nav ul li {
@@ -189,141 +191,163 @@ nav a:hover {
 
 /* RESPONSIVE TABLET ET MOBILE */
 @media (max-width: 768px) {
-  /* Header responsive */
-  header .container {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .logo h1 img {
-    margin-left: 0;
-    width: 60px;
-    height: 50px;
-  }
-  
-  nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  nav a {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.7rem;
-  }
-  
 
-/* Adaptations intermédiaires pour tablettes / petits PC */
-@media (max-width: 1024px) {
-    .container { padding: 0 18px; }
-    nav ul { gap: 1rem; }
-}
+    /* Header responsive */
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
-/* Très petits écrans : empiler le menu */
-@media (max-width: 600px) {
-    nav ul { flex-direction: column; gap: 0.5rem; align-items: center; }
-    header .container { align-items: center; }
-    .btn { padding: 0.8rem 1.2rem; }
-}
+    .logo h1 img {
+        margin-left: 0;
+        width: 60px;
+        height: 50px;
+    }
 
-/* Grands écrans : limiter l'empattement et garantir lisibilité */
-@media (min-width: 1400px) {
-    .container { max-width: 1400px; }
-    .hero { padding: 6rem 0; }
-}
-  .btn-connexion {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  /* Hero responsive */
-  .hero {
-    height: 60vh;
-    padding: 2rem 0;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
-  
-  /* Sections */
-  section h2 {
-    font-size: 1.8rem;
-  }
-  
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .card {
-    padding: 1.5rem;
-  }
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+
+    /* Adaptations intermédiaires pour tablettes / petits PC */
+    @media (max-width: 1024px) {
+        .container {
+            padding: 0 18px;
+        }
+
+        nav ul {
+            gap: 1rem;
+        }
+    }
+
+    /* Très petits écrans : empiler le menu */
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        header .container {
+            align-items: center;
+        }
+
+        .btn {
+            padding: 0.8rem 1.2rem;
+        }
+    }
+
+    /* Grands écrans : limiter l'empattement et garantir lisibilité */
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 1400px;
+        }
+
+        .hero {
+            padding: 6rem 0;
+        }
+    }
+
+    .btn-connexion {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero responsive */
+    .hero {
+        height: 60vh;
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Sections */
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
 }
 
 /* RESPONSIVE TRÈS PETIT ÉCRAN (< 480px) */
 @media (max-width: 480px) {
-  header .container {
-    padding: 0 10px;
-  }
-  
-  .logo h1 img {
-    width: 50px;
-    height: 40px;
-  }
-  
-  nav ul {
-    gap: 0.5rem;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  nav a {
-    display: block;
-    text-align: center;
-    padding: 0.5rem;
-    font-size: 0.85rem;
-  }
-  
-  .btn-connexion {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .hero {
-    height: 50vh;
-    padding: 1rem 0;
-  }
-  
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-  
-  .hero h2 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  section h2 {
-    font-size: 1.5rem;
-  }
-  
-  .container {
-    padding: 0 15px;
-  }
+    header .container {
+        padding: 0 10px;
+    }
+
+    .logo h1 img {
+        width: 50px;
+        height: 40px;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .btn-connexion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        height: 50vh;
+        padding: 1rem 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
 }
 
 /* Sections générales */
@@ -646,7 +670,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background:linear-gradient(135deg, var(--primary-color), var(--dark-green));
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
     color: var(--white);
     text-align: center;
     padding: 2rem 0;
@@ -698,27 +722,27 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    
-    }
+
+}
 
 
 /* @media (max-width: 480px) { */
-    .container {
-        padding: 0 15px;
-    }
+.container {
+    padding: 0 15px;
+}
 
-    .hero {
-        padding: 3rem 0;
-    }
+.hero {
+    padding: 3rem 0;
+}
 
-    section {
-        padding: 2.5rem 0;
-    }
+section {
+    padding: 2.5rem 0;
+}
 
-    .btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.95rem;
-    }
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+}
 
 
 /* Animations */
@@ -734,7 +758,9 @@ footer p {
     }
 }
 
-.card,.prix-item,.meteo-card {
+.card,
+.prix-item,
+.meteo-card {
     animation: fadeIn 0.6s ease-out;
 }
 
@@ -744,32 +770,46 @@ footer p {
     background-color: var(--accent-color);
     color: var(--white);
 }
+
 /* Mobile*/
 @media (max-width: 768px) {
-  .container {
-    padding: 0 15px;
-  }
-  .grid-2, .grid-3, .grid-4 {
-    grid-template-columns: 1fr;
-  }
-  nav a {
-  white-space: nowrap; 
-  padding: 10px 8px;
-}
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar .nav-links {
-    flex-direction: column;
-    width: 100%;
-    display: none; 
-  
-  }
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.5rem; }
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
+    .container {
+        padding: 0 15px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        white-space: nowrap;
+        padding: 10px 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
