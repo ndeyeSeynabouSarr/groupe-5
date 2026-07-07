@@ -189,16 +189,123 @@ nav a:hover {
 }
 
 
-/* RESPONSIVE MOBILE */
+/* RESPONSIVE TABLET ET MOBILE */
 @media (max-width: 768px) {
+  /* Header responsive */
+  header .container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .logo h1 img {
+    margin-left: 0;
+    width: 60px;
+    height: 50px;
+  }
+  
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+  
+  .btn-connexion {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Hero responsive */
   .hero {
-    height: 70vh; /* un peu moins haut sur tel */
+    height: 60vh;
+    padding: 2rem 0;
   }
+  
   .hero h1 {
-    font-size: 2rem; /* texte plus petit */
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
-  .hero p {
+  
+  .hero h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Sections */
+  section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+/* RESPONSIVE TRÈS PETIT ÉCRAN (< 480px) */
+@media (max-width: 480px) {
+  header .container {
+    padding: 0 10px;
+  }
+  
+  .logo h1 img {
+    width: 50px;
+    height: 40px;
+  }
+  
+  nav ul {
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .btn-connexion {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero {
+    height: 50vh;
+    padding: 1rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero h2 {
     font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 15px;
   }
 }
 
