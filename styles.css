@@ -43,9 +43,6 @@ header {
     top: 0;
     z-index: 1000;
     background: #1a1a2e;
-    /* Ta couleur foncée */
-
-
     background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
     color: var(--white);
     padding: 1.5rem 0;
@@ -61,8 +58,10 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -30px;
-    margin-bottom: -30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 12px;
+   
 }
 
 .noir {
@@ -78,7 +77,7 @@ header .container {
     margin-bottom: 0.3rem;
     width: 80px;
     height: 70px;
-    margin-left: -50px;
+    margin-left: 0;
     border-radius: 30px;
 }
 
@@ -93,8 +92,14 @@ header .container {
 
 nav ul {
     list-style: none;
+    display: flex;
     gap: 2rem;
     align-items: center;
+    flex-wrap: nowrap; /* garder sur une seule ligne sur desktop */
+}
+
+nav ul li {
+    white-space: nowrap; /* éviter le retour à la ligne des liens */
 }
 
 nav ul li {
